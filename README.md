@@ -1,2 +1,2 @@
 # RESTAURANT-PAGE
-First Website using Webpack!
+First project using Webpack!
