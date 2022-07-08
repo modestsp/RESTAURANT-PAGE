@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+:root {
+    --header-padding: 2rem;
+    --header-title: 3rem;
+    --main-title-padding: 4rem;
+    --home-padding: 5rem;
+    --menu-padding: 5rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e2e8f0;
+    padding: var(--header-padding);
+}
+
+header>h1 {
+    font-size: var(--header-title);
+}
+
+header>ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+ul>button {
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    background-color: #e2e8f0;
+    border-radius: 0.5rem;
+    align-self: flex-end;
+    box-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 1px 1px 5px black;
+    transition: 0.1s;
+}
+
+main {
+    background-color: #a1a1aa;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+
+/* HOME */
+main>h2 {
+    padding: 2rem;
+
+    font-size: 2rem;
+}
+
+main>p {
+    padding: var(--home-padding);
+}
+
+/* MENUS */
+
+main>div {
+    display: grid;
+    padding-left: var(--menu-padding);
+    padding-: var(--menu-padding);
+    padding-left: var(--menu-padding);
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.menus_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+article {
+    width: 250px;
+}
+
+/* Contact */
+
+.contact_main {
+    display: flex;
+    flex-direction: column;
+    padding: var(--home-padding);
+    gap: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 5px;
+}
+
+footer>a {
+    text-decoration: none;
+}
